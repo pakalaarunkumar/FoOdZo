@@ -1,0 +1,195 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Roboto", sans-serif;
+}
+
+.variants-card-container {
+  padding-top: 200px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.variant-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.back-btn {
+  position: fixed;
+  top: 100px;
+  left: 30px;
+  padding: 8px 15px;
+  border: none;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* GRID */
+.variants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.variant-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.variant-card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE */
+.variant-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* NAME */
+.heading-items {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* PRICE */
+.price {
+  color: #ff4d4d;
+  font-weight: bold;
+  margin: 5px 0 10px;
+}
+
+/* ADD BUTTON */
+.add-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* QUANTITY BOX */
+.quantity-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-box button {
+  padding: 5px 12px;
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantity-box span {
+  font-weight: 600;
+}
+
+/* POPUP CONTAINER */
+.cart-popup {
+  position: fixed;
+  top: 110px;
+  right: 30px;
+  z-index: 2000;
+}
+
+/* POPUP BOX */
+.popup-box {
+  width: 320px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  animation: slideIn 0.3s ease;
+}
+
+/* HEADER */
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.added-text {
+  color: green;
+  font-weight: 600;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* BODY */
+.popup-body {
+  display: flex;
+  gap: 12px;
+  margin: 15px 0;
+  align-items: center;
+}
+
+.popup-body img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* BUTTON */
+.go-cart-btn {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ff4d4d;
+  background: white;
+  color: #ff4d4d;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ANIMATION */
+@keyframes slideIn {
+  from {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.variant-name {
+  color: black;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+
+.price-variant {
+  color: red;
+  font-weight: bold;
+  font-family: "Roboto";
+  margin-bottom: 10px;
+  margin-top: 8px;
+}
+
+.add-numbers {
+  color: black;
+}

@@ -1,0 +1,278 @@
+body {
+  font-family: "Roboto";
+}
+.cart-container {
+  background-color: white;
+  text-align: center;
+  min-height: 130vh;
+}
+
+.empty-cart-img {
+  height: 350px;
+  padding-top: 30px;
+}
+
+.cart-heading {
+  color: red;
+  font-family: "Roboto";
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.card-total-header {
+  color: black;
+}
+
+.cart-item-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.cart-item-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-details {
+  flex: 1;
+}
+
+.remove-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cart-heading-items {
+  color: black;
+}
+
+.price-for-cart {
+  color: black;
+  padding-top: 8px;
+}
+
+.cart-quantity {
+  color: black;
+  padding-top: 8px;
+}
+
+.cart-quantity-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cart-quantity-box button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: #ff4d4f;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart-quantity-box span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.items-cart-cout {
+  color: black;
+}
+
+.continue-shopping-btn {
+  margin-top: 20px;
+  padding: 10px 18px;
+  border: none;
+  background: #ff4d4f;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.continue-shopping-btn:hover {
+  background: #e63946;
+}
+
+.cart-total-price {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #e63946;
+}
+
+.total-amount-heading {
+  color: black;
+}
+
+/* MOBILE RESPONSIVE CART */
+@media screen and (max-width: 768px) {
+  .cart-container {
+    background-color: white;
+    padding: 20px !important;
+    height: 100vh;
+  }
+
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cart-item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .cart-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .cart-item-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .cart-details {
+    width: 100%;
+  }
+
+  .cart-heading-items {
+    font-size: 16px;
+  }
+
+  .price-for-cart {
+    font-size: 14px;
+  }
+
+  .cart-quantity-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .cart-quantity-box button {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
+
+  .remove-btn {
+    margin-top: 5px;
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .cart-total-price {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .card-total-header {
+    font-size: 16px;
+  }
+
+  .continue-shopping-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .empty-cart-img {
+    width: 150px;
+  }
+  .images-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+  }
+  .continue-images {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+.simalary-items-card {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.heading-simarly-card {
+  font-size: 40px;
+  margin-bottom: 25px;
+  color: red;
+  font-family: "Roboto";
+  text-decoration: underline;
+}
+
+/* IMAGE CONTAINER */
+.images-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* IMAGE STYLE */
+.continue-images {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .images-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .continue-images {
+    height: 90px;
+  }
+}
+
+/* Mobile */
+
+.cart-img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.veg-nonveg-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 4px;
+  padding: 2px;
+}

@@ -1,0 +1,13 @@
+.loader-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.loader-gif {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}

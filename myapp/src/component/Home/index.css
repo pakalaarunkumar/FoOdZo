@@ -1,0 +1,182 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.home-container {
+  /* margin-top: 120px; */
+  text-align: center;
+  /* background: linear-gradient(to right, #a1c4fd, #c2e9fb); */
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+}
+
+.carousel {
+  padding-top: 150px;
+}
+.home-heading.scroll-move {
+  animation: slideInLeft 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.welcome-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  background-color: white;
+  padding: 40px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.15);
+
+  width: 93%;
+  max-width: 2500px;
+
+  margin: 0 auto;
+}
+
+.card-description {
+  padding-top: 15px;
+  color: #333;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.card-heading {
+  color: red;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .welcome-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .card-heading {
+    font-size: 1.6rem;
+  }
+
+  .card-description {
+    font-size: 1rem;
+  }
+
+  .food-image {
+    max-width: 300px;
+  }
+
+  .home-heading {
+    font-size: 2rem;
+  }
+}
+
+.order-now-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding-bottom: 15px;
+}
+
+.order-now-btn:hover {
+  background-color: gold;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.food-image {
+  width: 350px;
+  border-radius: 15px;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+  margin-bottom: 40px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 20px;
+}
+.next {
+  right: 20px;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 250px;
+  }
+
+  .prev,
+  .next {
+    font-size: 20px;
+    padding: 6px 10px;
+  }
+
+  .welcome-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .card-heading {
+    font-size: 26px;
+  }
+
+  .card-description {
+    font-size: 16px;
+  }
+
+  .food-image {
+    width: 90%;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+
+  .order-now-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}

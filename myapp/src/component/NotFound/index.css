@@ -1,0 +1,45 @@
+.not-found-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9fbff;
+  text-align: center;
+}
+
+.error-image {
+  width: 350px;
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+
+.not-found-container button {
+  padding: 10px 20px;
+  background-color: #4f46e5;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.not-found-container button:hover {
+  background-color: #3730a3;
+}
+
+.header-notFound {
+  color: rgb(145, 15, 205);
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+
+.page-p {
+  color: gray;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  font-size: 1.5rem;
+}

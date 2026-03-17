@@ -1,0 +1,39 @@
+.scratch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.prize {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.scratch-canvas {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  cursor:
+    url("data:image/svg+xml;base64,...") 20 20,
+    crosshair; /* Optional eraser cursor */
+  touch-action: none; /* Improves touch handling */
+}
+
+.celebration {
+  margin-top: 10px;
+  font-size: 24px;
+  color: gold;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
