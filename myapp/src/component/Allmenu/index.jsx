@@ -22,7 +22,7 @@ const Allmenu = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/foods")
+    fetch("https://foodzo-ajf0.onrender.com/foods")
       .then((res) => res.json())
       .then((data) => setFoods(data))
       .catch((err) => console.log(err));
